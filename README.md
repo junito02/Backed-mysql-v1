@@ -1,9 +1,10 @@
 # 📌 API de Usuarios – Backend con Node.js + MySQL
 
 Este proyecto es una **API RESTful** desarrollada con **Node.js, Express y MySQL**.  
-Se encarga de gestionar usuarios con operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+Permite gestionar usuarios mediante operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
 
-👉 Repositorio Backend: [junito02/Backed-mysql-v1](https://github.com/junito02/Backed-mysql-v1)
+👉 Repositorio: [junito02/Backed-mysql-v1](https://github.com/junito02/Backed-mysql-v1)  
+🌐 API en producción: [https://backed-mysql-v1-production.up.railway.app](https://backed-mysql-v1-production.up.railway.app)
 
 ---
 
@@ -19,6 +20,5 @@ Se encarga de gestionar usuarios con operaciones CRUD (Crear, Leer, Actualizar, 
 
 ### 🔹 Obtener todos los usuarios
 ```http
-GET /api/users
-GET /api/users/:id
-
+GET https://backed-mysql-v1-production.up.railway.app/api/users
+GET https://backed-mysql-v1-production.up.railway.app/api/users/:id
