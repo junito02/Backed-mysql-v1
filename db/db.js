@@ -1,7 +1,12 @@
 import mysql from "mysql2/promise"; // nota el /promise
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
-dotenv.config();
+// Configurar dotenv para que encuentre el archivo .env en el directorio Backend
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 // Usar DATABASE_URL para producción (como en Railway) y variables individuales para desarrollo local
 const connectionConfig = process.env.DATABASE_URL
